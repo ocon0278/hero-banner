@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: "Open Sans";
 }
 
 *, *::before, *::after {
@@ -8,9 +9,33 @@ html {
 
 .banner {
   position: relative;
+  max-height: 500px;
+  overflow: hidden;
 }
+
+.text h2 {
+  font-size: 3rem;
+  max-width: 7em;
+  margin: 0;
+  line-height: 1.2;
+  color: white;
+  font-weight: bold;
+}
+
 .banner-content {
   padding: 0 1rem;
   position: absolute;
   bottom: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: Roboto;
+  width: 100%;
+  max-width: 50em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
